@@ -1,0 +1,49 @@
+Revision history for Perl extension Apache::XBEL
+
+1.2.1	Tue Jun 11 2002
+
+	- First CPAN release
+
+	- Removed Apache::Reload
+
+	- Updated POD
+
+1.2
+
+	- Added &convert_outline method. 
+
+	- No longer loads CGI.pm; writes HTML for breadcrumbs by hand.
+
+	- Breadcrumbs are passed to the stylesheet as a parameter rather 
+	  munging the HTML file after transformation.
+
+	- No longer loads HTTP::Browser; not much point if the code that 
+	  goes along with it still hasn;t been written.
+
+	- Removed &init and moved code into &handler
+
+	- $gObj_xpath is not created until after a possible outline has 
+	  been converted to XBEL.
+
+	- Added $gVar_xbel_bak to record path to actual file in the event 
+	  of conversion.
+
+	- Added hooks to read output-escaping config from conf file and pass 
+	  it along as an XSL param.
+
+	- Added cleanup handler to reset $gVar_xbel_file and call XML::Xpath 
+	  cleanup method.
+
+	- Updated POD
+
+1.1
+
+	- Cleaned up naming conventions
+
+	- Replaced XML::Sablotron with XML::LibXSLT
+
+	- Updated POD
+
+1.0
+
+	- Initial revision

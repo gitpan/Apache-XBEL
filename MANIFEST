@@ -1,0 +1,7 @@
+Changes
+lib/Apache/XBEL.pm
+MANIFEST
+Makefile.PL
+test.pl
+xsl/apache-xbel.xsl
+xsl/opml2xbel.xsl
