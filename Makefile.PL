@@ -1,7 +1,5 @@
 use ExtUtils::MakeMaker;
 
-# /usr/local/share/xsl/apache-xbel
-
 WriteMakefile(
 	      'NAME'	     => 'Apache::XBEL',
 	      ($[ >= 5.005) ?
@@ -12,10 +10,11 @@ WriteMakefile(
 				 Apache           => '1.26',
 				 Digest::MD5      => '1.0',
 				 File::Basename   => 0,
-				 XML::Generator   => '0.91',
+				 File::Copy       => '0',
+				 File::Spec       => '0',
 				 XML::LibXML      => '1.51',
 				 XML::LibXSLT     => '1.31',
-				 XML::XPath       => '1.12',
+				 Memoize          => '0',
 				 
 				 # For test.pl
 				 Cwd              => 0,

@@ -1,5 +1,34 @@
 Revision history for Perl extension Apache::XBEL
 
+1.3	Mon Mar 01 2004
+
+	- The Spring Cleaning release :
+
+	- Updated to use html:base element for links (duh) and 
+	  added 'base' string parameter; add 'HtmlLang' Apache
+	  config
+
+	- Replaced string parameter hack for breadcrumbs with
+	  XSLT functions
+
+	- Replaced rendering of XBEL slices via XML::Generator
+	  via XML::LibXML::(Document|Element) methods
+
+	- Removed hooks to read outline documents via 
+	  Text::Outline
+
+	- Removed opml2xbel.xsl
+
+	- Added use of File::Spec for filesystem related tasks
+
+	- General house-cleaning in the code
+
+	- Updated apache-xbel.xsl accordingly
+
+	- Replaced test.pl with t/*.t
+
+	- Updated POD
+
 1.2.1	Tue Jun 11 2002
 
 	- First CPAN release
@@ -47,3 +76,5 @@ Revision history for Perl extension Apache::XBEL
 1.0
 
 	- Initial revision
+
+# $Id: Changes,v 1.7 2004/03/01 21:25:11 asc Exp $

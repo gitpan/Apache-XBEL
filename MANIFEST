@@ -2,6 +2,6 @@ Changes
 lib/Apache/XBEL.pm
 MANIFEST
 Makefile.PL
-test.pl
+t/00-load.t
 xsl/apache-xbel.xsl
-xsl/opml2xbel.xsl
+META.yml                                 Module meta-data (added by MakeMaker)
